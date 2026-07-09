@@ -2,6 +2,11 @@
 
 [ext_resource type="Script" uid="uid://bet37awr7dyvo" path="res://src/Factory/FactoryBase.gd" id="1_7hkqd"]
 [ext_resource type="Script" uid="uid://bdi3usy2i6kss" path="res://src/GlobalScript/Warehouse.gd" id="2_tbjfn"]
+[ext_resource type="Script" uid="uid://bm5d7k2vow336" path="res://src/GlobalScript/FactoryConfig.gd" id="3_yrlfd"]
+[ext_resource type="Script" uid="uid://6bi8dyh7kfns" path="res://src/GlobalScript/FactoryInputConfig.gd" id="4_8hq7b"]
+[ext_resource type="Resource" uid="uid://6f8v1stqh0ih" path="res://assets/resource/FactoryConfig/fic_test1.tres" id="5_tsxjb"]
+[ext_resource type="Script" uid="uid://lv5n6yibw6yx" path="res://src/GlobalScript/FactoryOutConfig.gd" id="6_dd6vq"]
+[ext_resource type="Resource" uid="uid://ifb0ee2ksgur" path="res://assets/resource/FactoryConfig/foc_test1.tres" id="7_f0huo"]
 
 [node name="UnitBase" type="Node2D" unique_id=1482028288 node_paths=PackedStringArray("f_warehouse")]
 script = ExtResource("1_7hkqd")
@@ -10,3 +15,9 @@ f_warehouse = NodePath("Warehouse")
 [node name="Warehouse" type="Node" parent="." unique_id=1496601311]
 script = ExtResource("2_tbjfn")
 metadata/_custom_type_script = "uid://bdi3usy2i6kss"
+
+[node name="FactoryConfig" type="Node" parent="." unique_id=2048728986]
+script = ExtResource("3_yrlfd")
+input = Array[ExtResource("4_8hq7b")]([ExtResource("5_tsxjb")])
+out = Array[ExtResource("6_dd6vq")]([ExtResource("7_f0huo")])
+metadata/_custom_type_script = "uid://bm5d7k2vow336"
