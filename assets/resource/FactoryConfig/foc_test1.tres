@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FactoryOutConfig" format=3 uid="uid://ifb0ee2ksgur"]
+
+[ext_resource type="Resource" uid="uid://bx0lfb5w31pn3" path="res://assets/resource/ResourceAgreement/ra_test2.tres" id="1_m2ffw"]
+[ext_resource type="Script" uid="uid://lv5n6yibw6yx" path="res://src/GlobalScript/FactoryOutConfig.gd" id="2_2r127"]
+
+[resource]
+script = ExtResource("2_2r127")
+out_resource = ExtResource("1_m2ffw")
+metadata/_custom_type_script = "uid://lv5n6yibw6yx"

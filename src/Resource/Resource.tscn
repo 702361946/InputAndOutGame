@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c6ybhp5rn11ge"]
+
+[ext_resource type="Script" uid="uid://crjddfyyhmpin" path="res://src/Resource/Resource.gd" id="1_gp4yr"]
+
+[node name="Resource" type="Node2D" unique_id=381621088]
+script = ExtResource("1_gp4yr")
+
+[node name="Container" type="BoxContainer" parent="." unique_id=1799145924]
+offset_right = 16.0
+offset_bottom = 16.0
+
+[node name="ResourceSprite" type="TextureRect" parent="Container" unique_id=1749153882]
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 4

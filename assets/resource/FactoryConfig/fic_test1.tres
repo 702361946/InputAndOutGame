@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="FactoryInputConfig" format=3 uid="uid://6f8v1stqh0ih"]
+
+[ext_resource type="Script" uid="uid://6bi8dyh7kfns" path="res://src/GlobalScript/FactoryInputConfig.gd" id="1_6xnbc"]
+[ext_resource type="Resource" uid="uid://cfi8tmh78bj6n" path="res://assets/resource/ResourceAgreement/ra_test1.tres" id="1_dv17k"]
+
+[resource]
+script = ExtResource("1_6xnbc")
+input_resource = ExtResource("1_dv17k")
+metadata/_custom_type_script = "uid://6bi8dyh7kfns"

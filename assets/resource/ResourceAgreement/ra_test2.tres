@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ResourceAgreement" format=3 uid="uid://bx0lfb5w31pn3"]
+
+[ext_resource type="Script" uid="uid://brnmv6e1o8afb" path="res://src/GlobalScript/ResourceAgreement.gd" id="1_4v77v"]
+
+[resource]
+script = ExtResource("1_4v77v")
+name = "test2"
+metadata/_custom_type_script = "uid://brnmv6e1o8afb"

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://deu0wm4wfsdhe"]
+
+[ext_resource type="Script" uid="uid://bet37awr7dyvo" path="res://src/Factory/FactoryBase.gd" id="1_7hkqd"]
+[ext_resource type="Script" uid="uid://bdi3usy2i6kss" path="res://src/GlobalScript/Warehouse.gd" id="2_tbjfn"]
+
+[node name="UnitBase" type="Node2D" unique_id=1482028288 node_paths=PackedStringArray("f_warehouse")]
+script = ExtResource("1_7hkqd")
+f_warehouse = NodePath("Warehouse")
+
+[node name="Warehouse" type="Node" parent="." unique_id=1496601311]
+script = ExtResource("2_tbjfn")
+metadata/_custom_type_script = "uid://bdi3usy2i6kss"
