@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c3pqx3a4vlc3x"]
+
+[ext_resource type="Script" uid="uid://cyuypuot1hvep" path="res://src/Factory/Control.gd" id="1_i4563"]
+[ext_resource type="Texture2D" uid="uid://bklnjt8vubafk" path="res://assets/Image/Factory/NodeImage.png" id="2_l3516"]
+
+[node name="InputControl" type="HBoxContainer" unique_id=1006088275 node_paths=PackedStringArray("NodeImage")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1124.0
+offset_bottom = -625.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_i4563")
+NodeImage = NodePath("NodeImage")
+
+[node name="NodeImage" type="TextureRect" parent="." unique_id=1860478824]
+layout_mode = 2
+texture = ExtResource("2_l3516")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="." unique_id=392228421]
+layout_mode = 2
