@@ -28,7 +28,7 @@ func deduction(resource_agreement: ResourceAgreement, value: int) -> bool:
 func inventory_judgment(resource_agreement: ResourceAgreement, value: int) -> bool:
 	if not resource_in_warehouse(resource_agreement):
 		return false
-	return value < all_quantity[resource_agreement]
+	return value <= all_quantity[resource_agreement]
 	
 func resource_in_warehouse(resource_agreement: ResourceAgreement) -> bool:
 	if not resource_agreement in white_list:
@@ -37,4 +37,3 @@ func resource_in_warehouse(resource_agreement: ResourceAgreement) -> bool:
 		all_quantity[resource_agreement] = 0
 		
 	return true
-

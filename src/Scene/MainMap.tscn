@@ -1,6 +1,14 @@
 [gd_scene format=3 uid="uid://c81cm8qvykvat"]
 
 [ext_resource type="PackedScene" uid="uid://deu0wm4wfsdhe" path="res://src/Factory/FactoryBase.tscn" id="1_hqqme"]
+[ext_resource type="Script" uid="uid://brnmv6e1o8afb" path="res://src/GlobalScript/ResourceAgreement.gd" id="2_625yk"]
+[ext_resource type="Script" uid="uid://b2biie6qan3tb" path="res://src/Scene/temp.gd" id="2_iqr7u"]
+[ext_resource type="Script" uid="uid://6bi8dyh7kfns" path="res://src/GlobalScript/FactoryInputConfig.gd" id="2_uqkpr"]
+[ext_resource type="Resource" uid="uid://cfi8tmh78bj6n" path="res://assets/resource/ResourceAgreement/ra_test1.tres" id="3_281br"]
+[ext_resource type="Resource" uid="uid://6f8v1stqh0ih" path="res://assets/resource/FactoryConfig/fic_test1.tres" id="3_bktxe"]
+[ext_resource type="Resource" uid="uid://bx0lfb5w31pn3" path="res://assets/resource/ResourceAgreement/ra_test2.tres" id="4_ob08q"]
+[ext_resource type="Script" uid="uid://lv5n6yibw6yx" path="res://src/GlobalScript/FactoryOutConfig.gd" id="4_rlr3t"]
+[ext_resource type="Resource" uid="uid://ifb0ee2ksgur" path="res://assets/resource/FactoryConfig/foc_test1.tres" id="5_625yk"]
 
 [node name="MainMap" type="Node2D" unique_id=1005644440]
 
@@ -20,5 +28,25 @@ offset_bottom = 408.0
 grow_horizontal = 1
 grow_vertical = 1
 
+[node name="Warehouse" parent="FactoryBase" index="1" unique_id=1496601311]
+white_list = Array[ExtResource("2_625yk")]([ExtResource("3_281br"), ExtResource("4_ob08q")])
+
+[node name="FactoryConfig" parent="FactoryBase" index="2" unique_id=2048728986 node_paths=PackedStringArray("WarehouseNode")]
+input = Array[ExtResource("2_uqkpr")]([ExtResource("3_bktxe")])
+out = Array[ExtResource("4_rlr3t")]([ExtResource("5_625yk")])
+WarehouseNode = NodePath("../Warehouse")
+
 [node name="Camera2D" type="Camera2D" parent="." unique_id=559368077]
 anchor_mode = 0
+
+[node name="Label" type="Label" parent="." unique_id=144969300 node_paths=PackedStringArray("w")]
+offset_left = 67.0
+offset_top = 460.0
+offset_right = 107.0
+offset_bottom = 483.0
+script = ExtResource("2_iqr7u")
+w = NodePath("../FactoryBase/Warehouse")
+
+[editable path="FactoryBase"]
+[editable path="FactoryBase/L1/IO/Input/InputControl"]
+[editable path="FactoryBase/L1/IO/Out/OutControl"]
