@@ -20,3 +20,4 @@ func _ready():
 	size_flags_horizontal = SIZE_SHRINK_CENTER
 	size_flags_vertical = SIZE_SHRINK_CENTER
 
+	self.global_position = GlobalValue.to_approximate_coordinates(self.global_position)

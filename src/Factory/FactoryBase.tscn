@@ -9,7 +9,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0o4k2"]
 size = Vector2(976, 479)
 
-[node name="FactoryBase" type="PanelContainer" unique_id=1428846563 node_paths=PackedStringArray("f_warehouse")]
+[node name="FactoryBase" type="PanelContainer" unique_id=1428846563 node_paths=PackedStringArray("f_warehouse") groups=["movable_factory"]]
 clip_contents = true
 anchors_preset = 15
 anchor_right = 1.0
