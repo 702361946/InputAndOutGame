@@ -3,12 +3,13 @@
 [ext_resource type="Script" uid="uid://bjgln7msjwme" path="res://src/Scene/VirtualCursor/VirtualCursor.gd" id="1_u7vo4"]
 [ext_resource type="Texture2D" uid="uid://bcink6fx48elg" path="res://assets/Image/VirtualCursor/VC.png" id="2_52bxj"]
 
-[node name="VirtualCursor" type="Node2D" unique_id=157091310]
+[node name="VirtualCursor" type="CanvasLayer" unique_id=157091310]
 process_mode = 3
+layer = 100
 script = ExtResource("1_u7vo4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2011776737]
+visible = true
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_52bxj")
-
-[node name="Marker2D" type="Marker2D" parent="." unique_id=1398958244]
+centered = true
